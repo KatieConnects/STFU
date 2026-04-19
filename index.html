@@ -1,728 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[YOUR PAGE TITLE]</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --panel: #1a1f29;
+      --panel-2: #222938;
+      --text: #f5f7ff;
+      --muted: #c7d0e0;
+      --accent: #2d8cff;
+      --accent-hover: #176fd6;
+      --max: 1100px;
+    }
 
+    * { box-sizing: border-box; }
 
-      <!-- APK DOWNLOADS SECTION -->
-     <section id="downloads">
-  <div class="app-card">
-    <h2>Streamfire v1.2.3(Updated on 12/15/25</h2>
-    <p>Live Tv app.</p>
-    <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1.2.3/streamfire1.2.3.1.apk" class="download-btn">Download</a>
-  </div>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
 
-  <!-- APK DOWNLOADS SECTION -->
-<section id="downloads">
-<!-- APK DOWNLOADS - BLANK TEMPLATES -->
-<section id="downloads">
+    header {
+      background: linear-gradient(180deg, #151b25 0%, #10151e 100%);
+      border-bottom: 1px solid #293246;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
 
-  <!-- Template 2 -->
-  <div class="app-card">
-    <h2>Sportsfire</h2>
-    <p> Updated on 12/24/25.  Watch live sports from major networks and leagues with smooth streaming, quick loading and easy to use interface.</p>
-    <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v2.0.7/sportsfire2.0.7.apk" class="download-btn">Download</a>
-  </div>
+    header h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 2.6vw, 2.8rem);
+    }
 
-  <!-- Template 3 -->
-  <div class="app-card">
-    <h2>SmartTube</h2>
-    <p>  UPDATED 1/17/26: Ad Free Youtube.</p>
-    <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.3.2/smarttube_stable.2.apk" class="download-btn">Download</a>
-  </div>
+    header p {
+      margin: 0.75rem auto 0;
+      max-width: 800px;
+      color: var(--muted);
+    }
 
-  <div class="app-card">
-    <h2>Film +</h2>
-    <p> ( Updated on 4/9/2026 )  Film + APK is a lightweight streaming application designed for on-demand access to movies and TV shows in a clean, easy-to-navigate interface. The app pulls content from multiple public sources
-      and organizes it into searchable categories, making it simple to find what you want without unnecessary clutter.</p>
-    <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.0.1/FilmPlus_v2.4.1_AdFree.apk" class="download-btn">Download</a>
-  </div>
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 1rem;
+    }
 
-<style>
-.download-btn {
-  display: inline-block;
-  background-color: #007bff; /* blue */
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.2s;
-}
-.download-btn:hover {
-  background-color: #0056b3;
-}
-</style>
+    section {
+      background: var(--panel);
+      border: 1px solid #2a3344;
+      border-radius: 14px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
 
-  </div>
+    .template-note {
+      background: #151b25;
+      border-left: 4px solid #ffcc4d;
+      color: #ffe9a8;
+    }
 
-  <!-- Template 5 -->
-  <div class="app-card">
-    <h2>XCIPTV Player</h2>
-    <p>XCIPTV Player is a customizable IPTV player designed for streaming live TV, movies, and series from your IPTV service provider. It does not include content on its own — users must add their own playlist or portal (M3U URL or Xtream Codes).</p>
-    <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v24/XCIPTV.Player.v7.0.apk" class="download-btn">Download</a>
-  </div>
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 12px;
+    }
 
-</section>
+    .app-card {
+      background: var(--panel-2);
+      border: 1px solid #32405a;
+      border-radius: 12px;
+      padding: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
 
-    <div class="app-card">
-    <h2>Tea TV</h2>
-    <p> (Added 1/20/25) This App is a power app allowing you to access on demand library for movies/tv & for Live TV
-    allows M3U playlist URL's to be added, like the one's I've listed on this site , scroll down below Kodi/IPTV Simple
-    Client Instructions below and enter URL playlist into Tea TV.  I have only listed a couple M3U playlist below, 
-    however I'm going to put up more info later.  I found all of these on the internet and did not create or own any
-    of the information on this website.</p>
-    <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.28/TeaTV-v11.1.0r.apk" class="download-btn">Download HDO Box</a>
-  </div>
+    .app-card h3 {
+      margin: 0;
+      font-size: 1rem;
+      color: #dce7ff;
+    }
 
-</section>
-<!-- more app-ca
-  
-  <!-- HDO Box -->
-  <div class="app-card">
-    <h2>HDO Box</h2>
-    <p> Updated 12/17/25 Use with Drama player.Click-to-play movie & TV series app with categories and production filters.</p>
-    <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v2.1.4/HDO_Box_v2.1.4_Android_TV_hdoboxplus.apk" class="download-btn">Download HDO Box</a>
-  </div>
-</section>
+    .app-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
 
-    <div class="app-card">
-    <h2>Tivimate</h2>
-    <p>  (ADDED 2/2/2026)  Tivimate is a premium Android IPTV player app designed to organize and play live tv,
-      movies, etc. using your own (M3U or M3U8 playlist) See below instructions for playlist to try this.  This does
-      not hold any content until you add playlist..</p>
-    <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.29/tivimate.5.2.0.1.apk" class="download-btn">Download HDO Box</a>
-  </div>
+    .download-button {
+      display: inline-block;
+      width: 100%;
+      background-color: var(--accent);
+      color: #ffffff;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 700;
+      transition: background-color 0.2s ease;
+      margin-top: auto;
+    }
 
-</section>
-<!-- more 
-</section>
-<!-- more app-card blocks here -->
-</section>
+    .download-button:hover {
+      background-color: var(--accent-hover);
+    }
 
-    <div class="app-card">
-    <h2>Smart IPTV Player</h2>
-    <p>  (ADDED 2/2/2026)  Smart IPTV player is another player that allows you to enter your own M3U or M3U8 playlist
-      which you can find a few to start on this page below..</p>
-    <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.29/Smart.IPTV.v1.8.8.apk" class="download-btn">Download HDO Box</a>
-  </div>
-
-</section>
-<div class="app-card">
-          <h3>Kodi Omega 21 (32ARM)</h3>
-          <p><Kodi is an open-source media player-(Windows, macOS, Linux, Android, iOS, Raspberry Pi). It organizes and plays digital media from local storage, network storage, and the internet.-></p>
-          <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/21.3/32bitARMKODIOMEGA20.apk" class="download-btn" target="_blank">Download</a>
-
-        </div>
-        <div class="app-card">
-          <h3>Kodi Omega 21 (64 ARM)</h3>
-         <p>Open source media player for Windows, macOS & more.</p>
-          <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/21.3/kodi-21.2-Omega-arm64-v8a.apk" class="download-btn">Download</a>
-        </div>
-    
- </div>
-        <div class="app-card">
-          <h3>Bee TV</h3>
-         <p>Bee TV is a third party streaming app that lets you watch a large library of movies & tv shows
-           and it works flawlessly with the "bear player"  You will not need to install the bear player
-           upon installation of bee tv you will be prompted to install bear player
-           once you attempt to watch something, install it and then proceed to try to watch again
-           after bear player installs!</p>
-          <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1%2C2%2C1/beetvseptup.apk" class="download-btn">Download</a>
-        </div>
-    
-        </div>
-        <div class="app-card">
-          <h3>Flix Vision v3.2.0</h3>
-         <p>This version is a mod.  (Updated on 12/15/25) If this doesn't work or your bothered by original's intrusive
-         ad's you can use downloader and type in "8245515' for the most updated version as of 12/15/25.
-         Flixvision is an all in 1 super app that has links to literally everything, please try more
-         than one link I promise this is the app of all apps!!!</p>
-          <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1.2.3/FLIX.VISION.NEW_v3.2.0_2r.r.62._mod.apk" class="download-btn">Download</a>
-        </div>
- </div>
-        <div class="app-card">
-          <h3>Onstream</h3>
-         <p>Updated on 12/15/25.  This is a free streaming app that instant plays(no choosing links) your fav
-           tv shows and movies.  The interface looks like their isn't any content, but search by name
-           and you will see all you need to do is click play and it also will play the next episode 
-           automatically.  This is a slept on apk that is my fav #1 in movies/tv 3rd party streaming apps.!</p>
-          <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1.1.0/OnStream-v1.1.0.Andriod-TV.apk" class="download-btn">Download</a>
-        </div>
-
-       div class="app-card">
-          <h3>STRMR </h3>
-         <p>(NEW) STRMR APK is your all-in-one streaming powerhouse for Android devices and Firestick TV. This isn’t
-           a basic app—it’s your digital cinema, TV station, sports arena, and late-night hangout, all in one sleek APK.</p>
-          <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.3.2/STRMR-latest.1.apk" class="download-btn">Download</a>
-        </div>
-       
-       <div class="app-card">
-          <h3>APK Time</h3>
-         <p>  (Added on 1/17/26) APK Time is another app store for Android APK's , Tools and more</p>
-          <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.3.2/APKTime-v2.2-Original.apk" class="download-btn">Download</a>
-        </div>
-       
-       <div class="app-card">
-          <h3>Stremio</h3>
-          <p><Stremio is a flawless streaming app that lets you stream Live TV, movies & tv series(Check out my Youtube or other video's for Live TV setup for stremio-></p>
-          <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v22.2/Stremio_1.6.7_.Android_TV.apk" class="download-btn">Download</a>
-        </div>
-        <div class="app-card">
-          <h3>Cinema HD</h3>
-          <p><Cinema HD is a free streaming app that lets users watch and download movies and TV shows from multiple online sources. It organizes content by genre, release year, and popularity ”-></p>
-          <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.41/cinemahd-v3.4.1.apk" class="download-btn">Download</a>
-        </div>
-        <div class="app-card">
-          <h3>Launch Manager for Firestick</h3>
-          <p><Launcher Manager is a tool (APK) for Fire TV / Firestick / Fire OS devices. It helps you replace or control the launcher/home screen interface.></p>
-          <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/0.1.9/launchermrgforfirestick.apk" class="download-btn">Download</a>
-        </div>
-
-       
-  <section id="Sports" class="app-card">
-  <h2>SportzX_2.1v</h2>
-  <p>Sportz X is a live sports streaming app that gives you access to major sports channels, events, and replays all in one place. 
-    It supports multiple playlists, smooth playback, and a clean interface for Firestick and Android devices.
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v24/SportzX_2.1v.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
-
-<style>
-.app-card {
-  background: #1a1a1a;
-  color: #f5f5f5;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.app-card h2 {
-  margin-top: 0;
-  font-size: 1.5em;
-  color: #00bcd4;
-}
-
-.download-btn {
-  display: inline-block;
-  margin-top: 10px;
-  background: #00bcd4;
-  color: #fff;
-  padding: 10px 18px;
-  bo
-
-
- 
-</p>
-
-  <p style="font-size:12px; color:#777;">
-<section id="IPTV" class="app-card">
-  <h2>IPTV Smarters</h2>
-  <p>IPTV Smarters is a powerful player for watching live TV, movies, and series from your IPTV service or M3U playlist. 
-    It features a clean interface, built-in EPG support, and works smoothly on Firestick, Android TV, and mobile devices.
-    
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.31/IPTV_Smarters_Classic_v2.2.2.5.Premium.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
-
-<style>
-.app-card {
-  background: #1a1a1a;
-  color: #f5f5f5;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.app-card h2 {
-  margin-top: 0;
-  font-size: 1.5em;
-  color: #00bcd4;
-}
-
-.download-btn {
-  display: inline-block;
-  margin-top: 10px;
-  background: #00bcd4;
-  color: #fff;
-  padding: 10px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.download-btn:hover {
-  background: #0097a7;
-}
-</style>
-<section style="background-color:#111; color:white; padding:20px; border-radius:10px; margin-bottom:20px; text-align:center; box-shadow:0 0 10px rgba(0,0,0,0.5);">
-  <h2 style="color:#00bfff; margin-bottom:10px;">All in One </h2>
-  <p style="font-size:15px; line-height:1.5; margin-bottom:15px;">
-   All 4 One is an all-in-one streaming app that combines multiple adult entertainment platforms in one place. It offers fast performance, easy navigation, and a simple setup for Android and Firestick devices. .
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v4.4/ALL-IN-1-v3.2.2.FireSticks-Black-Ad-Free.apk" target="_blank" 
-     style="display:inline-block; background-color:#00bfff; color:white; padding:10px 20px; border-radius:6px; text-decoration:none; font-weight:bold;">
-     Download App
-  </a>
-</section>
-<section style="background-color:#111; color:white; padding:20px; border-radius:10px; margin-bottom:20px; text-align:center; box-shadow:0 0 10px rgba(0,0,0,0.5);">
-  <h2 style="color:#00bfff; margin-bottom:10px;">Porn Total</h2>
-  <p style="font-size:15px; line-height:1.5; margin-bottom:15px;">
-    Porn Total is a premium streaming app that brings together a wide range of adult video sites and categories in one place. It’s fast, easy to use, and compatible with both Firestick and Android devices..
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v4.1/porntotal.apk" target="_blank" 
-     style="display:inline-block; background-color:#00bfff; color:white; padding:10px 20px; border-radius:6px; text-decoration:none; font-weight:bold;">
-     Download App
-  </a>
-</section>
-<!-- ======= APP BLOCKS ======= -->
-<div class="app-section">
-
-  <!-- App 1 -->
-  <div class="app-card">
-    <h3>HD STREAMZ</h3>
-    <p>HD Streamz — Free live TV and radio streaming app offering access to over 1,000 channels worldwide. Includes sports, movies, music, news, and entertainment. Works on Android devices, Firestick, and Android T.</p>
-    <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/V3.34/HD_STREAMZ_Latest_3.9.6-a-174_18-Jun-25_436ffe7f_enc.apk">Download</a>
-  </div>
-
-  <!-- App 2 -->
-  <div class="app-card">
-    <h3>Unlinked</h3>
-    <p>Unlinked — File-sharing and app-store alternative for Android and Firestick. Lets users create or access custom libraries using unique codes to download apps,...</p>
-    <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/0.1.9/unlinked.apk.apk" class="download-button">Download</a>
-  </div>
-
- 
-
-
-  <!-- App 7 -->
-  <div class="app-card">
-    <h3>Tubi</h3>
-    <p>Tubi is a free, legal streaming app that offers movies, TV shows and live-channels without a subscription fee....</p>
-    <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1%2C2%2C2/Tubi-v9.8.1000.Ad-Free.apk" class="download-button">Download</a>
-  </div>
-
-
-
-  <!-- App 9 -->
-  <div class="app-card">
-    <h3>Incognito Play</h3>
-    <p>one-click” access to free adult movies, across categories such as 3D, hentai, MILF, Asian, Latina, etc...</p>
-    <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1%2C2%2C1/Incognito_Play_v1.1.2.apk" class="download-button">Download</a>
-  </div>
-
-<section id="Sports" class="app-card">
-  <h2>Cloudstream</h2>
-  <p>CloudStream is an open-source Android app that aggregates streaming sources so you can browse, play, and download movies, TV shows, anime and similar media via add-ons
-    (extensions) and repositories. It does not host content itself — extensions provide links from third-party sites.
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.44/Cloudstream.v4.5.2.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
-
-<style>
-.app-card {
-  background: #1a1a1a;
-  color: #f5f5f5;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.app-card h2 {
-  margin-top: 0;
-  font-size: 1.5em;
-  color: #00bcd4;
-}
-
-.download-btn {
-  display: inline-block;
-  margin-top: 10px;
-  background: #00bcd4;
-  color: #fff;
-  padding: 10px 18px;
-  bo
-
-
- 
-</p>  
-  
-</div>
-
-<!-- ======= BUTTON STYLING ======= -->
-<style>
-.app-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.app-block {
-  background-color: #1b1b1b;
-  color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  width: 280px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-.download-button {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  font-weight: bold;
-}
-.download-button:hover {
-  background-color: #0056b3;
-}
-</style>
-<section id="Sports" class="app-card">
-  <h2>TizenTube</h2>
-  <p>Tizentube is essentially Ad Free Youtube with the most similar interface.  Watch youtube ad free.
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.3.2/cobalt-armTIZEN.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
-
+    .instructions li { margin: 0.4rem 0; }
+    .text-link { color: #9fc5ff; }
   </style>
-<section id="Sports" class="app-card">
-  <h2>Viva TV (v1.7.4)</h2>
-  <p>3rd party streaming app designed to give users free access to a large catalog of movies and tv shows from various 
-    internet sources.
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v7/Viva.TV.v1.7.4.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
+</head>
+<body>
+  <header>
+    <h1>[YOUR SITE NAME]</h1>
+    <p>[SHORT BIO / WHAT THIS PAGE IS FOR]</p>
+  </header>
 
-  </style>
-<section id="Sports" class="app-card">
-  <h2>OceanStreamz</h2>
-  <p>third party app primarily used on android based streaming devices and its purpose is to function as a free content
-    aggregator or search engine and contains a vast library.
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.0.1/OCEAN_STREAMZ_v3.5.1.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
+  <main>
+    <section class="template-note">
+      <h2>Template Edit Guide</h2>
+      <p>
+        Replace anything inside brackets like <strong>[THIS]</strong> with your own words.
+        After you type your words, <strong>delete the brackets</strong>.
+      </p>
+      <p>
+        Example: change <strong>[YOUR SITE NAME]</strong> to <strong>Katie's App Hub</strong>.
+      </p>
+    </section>
 
-    </style>
-<section id="Sports" class="app-card">
-  <h2>App Cloner</h2>
-  <p>App Cloner lets you create and install independent
-    copies of your existing Android apps so you can run them 
-    alongside the originals. Each cloned app functions separately —.
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/3.5.0/app-cloner.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
+    <section>
+      <h2>[ABOUT ME / ABOUT THIS PAGE]</h2>
+      <p>[TYPE YOUR INTRODUCTION HERE]</p>
+    </section>
 
-   </style>
-<section id="Sports" class="app-card">
-  <h2>IPTV Smarters Classic</h2>
-  <p>this app is not a streaming service itself, but a rather powerful, cross plaform media player and client application
-    for watching content from a 3rd party IPTV service.  Its primary function is to log into an IPTV subscription service
-    you already posess.  Add custom MU3 URL playlist into IPTV smarters.
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.31/IPTV_Smarters_Classic_v2.2.2.5.Premium.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
-  
-   </style>
-<section id="Sports" class="app-card">
-  <h2>I PIX MEDIA</h2>
-  <p>A Media aggregator/player application for streaming various forms of digital content and often including movies, and tv
-    series and live television. This app itself doesn't host any content it relies on finding and providing access to media links
-    from various sources on the internet.
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.44/1Pix.Media.4.0.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
+    <section>
+      <h2>Downloads</h2>
+      <div class="app-grid">
+        <article class="app-card"><h3>Streamfire</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1.2.3/streamfire1.2.3.1.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Sportsfire</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v2.0.7/sportsfire2.0.7.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>SmartTube</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.3.2/smarttube_stable.2.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Film+</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.0.1/FilmPlus_v2.4.1_AdFree.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>XCIPTV Player</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v24/XCIPTV.Player.v7.0.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Tea TV</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.28/TeaTV-v11.1.0r.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>HDO Box</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v2.1.4/HDO_Box_v2.1.4_Android_TV_hdoboxplus.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Tivimate</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.29/tivimate.5.2.0.1.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Smart IPTV Player</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.29/Smart.IPTV.v1.8.8.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Kodi Omega 21 (32ARM)</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/21.3/32bitARMKODIOMEGA20.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Kodi Omega 21 (64 ARM)</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/21.3/kodi-21.2-Omega-arm64-v8a.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Bee TV</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1%2C2%2C1/beetvseptup.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Flix Vision</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1.2.3/FLIX.VISION.NEW_v3.2.0_2r.r.62._mod.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>OnStream</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1.1.0/OnStream-v1.1.0.Andriod-TV.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>STRMR</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.3.2/STRMR-latest.1.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>APK Time</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.3.2/APKTime-v2.2-Original.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Stremio</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v22.2/Stremio_1.6.7_.Android_TV.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Cinema HD</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.41/cinemahd-v3.4.1.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Launch Manager for Firestick</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/0.1.9/launchermrgforfirestick.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>SportzX</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v24/SportzX_2.1v.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>IPTV Smarters (copy 1)</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.31/IPTV_Smarters_Classic_v2.2.2.5.Premium.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>All in One</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v4.4/ALL-IN-1-v3.2.2.FireSticks-Black-Ad-Free.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Porn Total</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v4.1/porntotal.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>HD Streamz</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/V3.34/HD_STREAMZ_Latest_3.9.6-a-174_18-Jun-25_436ffe7f_enc.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Unlinked</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/0.1.9/unlinked.apk.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Tubi</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1%2C2%2C2/Tubi-v9.8.1000.Ad-Free.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Incognito Play</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1%2C2%2C1/Incognito_Play_v1.1.2.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Cloudstream</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.44/Cloudstream.v4.5.2.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>TizenTube</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.3.2/cobalt-armTIZEN.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Viva TV</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v7/Viva.TV.v1.7.4.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Ocean Streamz</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.0.1/OCEAN_STREAMZ_v3.5.1.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>App Cloner</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/3.5.0/app-cloner.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>IPTV Smarters (copy 2)</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.31/IPTV_Smarters_Classic_v2.2.2.5.Premium.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>1Pix Media</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.44/1Pix.Media.4.0.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Wuffy Media Player</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v7/Wuffy.Media.Player.v4.1.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>CRICFy</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.26/CRICFy_v5.5_cricfy.net.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Drama Player</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v2.1.4/Drama_Player_v1.0.11_Android_TV_hdoboxplus.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>RBTV77</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.26/rbtv77-app-v3.0.309.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Playfy TV</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.26/Playfy.tv.1.3.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>TPlayer</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.27/tplayer-7-8b.apk" class="download-button">Download</a></article>
+        <article class="app-card"><h3>Pato Player Pro</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.26/PatoPlayerPro_v24.apk" class="download-button">Download</a></article>
+      </div>
+    </section>
 
- </style>
-<section id="Sports" class="app-card">
-  <h2>Wuffy player</h2>
-  <p>Is essentially a media player and goes along with 1 Pix media and supports M3U playlist.
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v7/Wuffy.Media.Player.v4.1.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
-
-   </style>
-<section id="Sports" class="app-card">
-  <h2>Crucify</h2>
-  <p>A Free Sports App that offers live tv and sporting events access from around the world.
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.26/CRICFy_v5.5_cricfy.net.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
-
-   </style>
-<section id="Sports" class="app-card">
-  <h2>Drama Player</h2>
-  <p> Update 12/17/25  and
-    should now work flawlessly with HDO box
-    please install the Drama Player with HDO as this is the external video player that HDO Box relies on for playback.
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v2.1.4/Drama_Player_v1.0.11_Android_TV_hdoboxplus.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
-
-</style>
-<section id="Sports" class="app-card">
-  <h2>RBTV77</h2>
-  <p>RBTV77 SPORTS APP FOR ANDROID TV .
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.26/rbtv77-app-v3.0.309.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
-
-  </style>
-<section id="Sports" class="app-card">
-  <h2>PLAYFY</h2>
-  <p>NEW FREE SPORTS APP W/LIVE MATCHES, HIGHLIGHTS & TOP TV CHANNELS FROM US, UK, GERMANY,  & INDIA.
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.26/Playfy.tv.1.3.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
-
- </style>
-<section id="Sports" class="app-card">
-  <h2>Tplayer</h2>
-  <p>You will need Tplayer to watch "Viva TV" .TPlayer is a video/media-player app for Android that supports a wide range of
-    video and audio formats (MKV, MP4, AVI, etc.), plus network streams, subtitles, multi-track audio, and even 4K playback. 
-A
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.27/tplayer-7-8b.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
-
-  </style>
-<section id="Sports" class="app-card">
-  <h2>Pato Player</h2>
-  <p>Pato Player is described as an Android app that gives access to live-TV channels, movies/series, and sometimes sports/news 
-    streams — all “for free.” . 
-A
-  </p>
-  <a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.26/PatoPlayerPro_v24.apk" class="download-btn" download>
-    Download App
-  </a>
-</section>
-
-  
-  Note: I am not the developer of these apps. Use at your own discretion.
-</p>
-
-  <footer style="margin-top:40px; padding:20px; font-size:14px; color:#555; border-top:1px solid #ccc; text-align:center;">
-  <p><strong>Disclaimer:</strong> This site is for educational purposes only. I am not the developer of StreamFire, SmartTube, or any other third-party application mentioned here. 
-  All files linked are publicly available on the internet or the developers' official repositories. These applications may allow access to third-party content. 
-  I do not host or distribute copyrighted material and do not encourage piracy. 
-  By downloading or using these apps, you accept full responsibility for your actions and compliance with your local laws.</p>
-</footer>
-
-    <!-- KODI SECTION -->
-    <section id="kodi">
-      <h2>Kodi Add-ons</h2>
-      <p><✨Kodi APK is an open source media center application.  Can be installed on phone, tablet, Firestick and
-        Android TV boxes & lets you play local media filed and stream content via add on's. . ✨ ></p>
-      <section id="kodi">
-  
-  <h2>Kodi</h2>
-  <p>Kodi is an open-source media center app that plays videos, music, and more through add-ons.</p>
-
-  <h3>How to Setup the Lab Add on</h3>
-  <ol>
-    <li>Open Kodi and go to <b>Settings</b> (gear icon).</li>
-    <li>Select <b>System</b> → enable <b>Unknown sources</b>.</li>
-    <li>Return to <b>Settings</b> → open <b>File Manager</b>.</li>
-    <li>Add source → (https://tinyurl.com/TheL48.</li>
-    <li>Click ok→ <b>Name it L48 and click ok</b> → <b>Click back 1x and select add on's</b>.</li>
-    <li>Install from zip file → Select The Lab Repo</li>
-    <li>Select only repo available <b>You will see an install message upper right corner</b> → Now install from repository
-      >Select The Lab Repository>Select Video Add on's>Select Dream Machine>Install Dream Machine.</li>
-  </ol>
-<ul>
-  <li><b>Step 1:</b> To use Dream Machine Follow these steps <b>Click back to Kodi Home Page
-  >Scroll down to Add on's & open dream machine on right</b> Scroll all the way down thru the terms.</li>
-  <li><b>Step 2:</b> Click Center button to open menus & Select Xtream>Then you will see different 
-    servers listed (ex: xtream server 1...2..3 etc...>Select any server
-    >I selected Xtream Server 2, but any may work>Next a number pad pops up
-    >Put in any # (Im gonna say 35) and click done>Then it should pull up
-    at least half of the 35 i requested >They will list as (https://kstv.us.8080
-    a whole bunch of them>Select any one of those (https://kstv.us.8080s
-    >Then it pulls up a familiar menu somewhat like Dream TV>Main Events PPV, 
-    US entertainment is gonna be your usual cable channels, there is locals, movie channels 
-    and even lots of spanish movies.  If anything stops working go 
-    back and try a different server and play around with it.<b>Dream TV add on is 
-    no longer working and Dream Machine took its place.</b> (and its a little bit confusing
-    but i promise you this add on is worth the try <b>Unknown Sources</b>.</li>
-  </li>
-
-  <h3>Popular Kodi Sources</h3>
-  <ul>
-    
-    <h3>How to Install Jew Repo (Scrubs V2)</h3>
-<ol>
-  <li>Go to <b>Settings</b> → <b>System</b> → enable <b>Unknown sources</b>.</li>
-  <li>Click back one time and open <b>File Manager</b>.</li>
-  <li>Scroll down to <b>Add source</b>.</li>
-  <li>Type in URL: <code>https://jewbmx.github.io</code></li>
-  <li>Click <b>OK</b> → name it <b>Jew</b> → click <b>OK</b> again.</li>
-  <li>You will see it saved on the right.</li>
-  <li>Click back → go to <b>Add-ons</b>.</li>
-  <li>Select <b>Install from zip file</b>.</li>
-  <li>Choose <b>Jew</b> → select the repo file → wait for install message.</li>
-  <li>Click <b>Install from repository</b> → open <b>Jew Repo</b>.</li>
-  <li>Go to <b>Video add-ons</b> → find <b>Scrubs V2</b> → click <b>Install</b>.</li>
-</ol>
-
-    <h3>How to Install cMaN Repo</h3>
-<ol>
-  <li>Go to <b>Settings</b> → <b>System</b> → enable <b>Unknown sources</b>.</li>
-  <li>Click back one time and open <b>File Manager</b>.</li>
-  <li>Scroll down to <b>Add source</b>.</li>
-  <li>Type in URL: <code>http://cmanbuilds.com/repo</code></li>
-  <li>Click <b>OK</b> → name it <b>cMaN</b> → click <b>OK</b> again.</li>
-  <li>You will see it saved on the right.</li>
-  <li>Click back → go to <b>Add-ons</b>.</li>
-  <li>Select <b>Install from zip file</b>.</li>
-  <li>Choose <b>cMaN</b> → select the repo file → wait for install message.</li>
-  <li>Click <b>Install from repository</b> → open <b>cMaN Repo</b>.</li>
-  <li>Go to <b>Video add-ons</b> → pick the add-on you want (e.g. <b>Revolution</b>, <b>Base</b>) → click <b>Install</b>.</li>
-</ol>
-
-   <h3>How to Install Magnetic Repo</h3>
-<ol>
-  <li>Go to <b>Settings</b> → <b>System</b> → enable <b>Unknown sources</b>.</li>
-  <li>Click back one time and open <b>File Manager</b>.</li>
-  <li>Scroll down to <b>Add source</b>.</li>
-  <li>Type in URL: <code>https://magnetic.website/repo</code></li>
-  <li>Click <b>OK</b> → name it <b>Magnetic</b> → click <b>OK</b> again.</li>
-  <li>You will see it saved on the right.</li>
-  <li>Click back → go to <b>Add-ons</b>.</li>
-  <li>Select <b>Install from zip file</b>.</li>
-  <li>Choose <b>Magnetic</b> → select the repo file → wait for install message.</li>
-  <li>Click <b>Install from repository</b> → open <b>Magnetic Repo</b>.</li>
-  <li>Go to <b>Video add-ons</b> → pick an add-on (Chains, WatchNixtoons, etc.) → click <b>Install</b>.</li>
-</ol>
-
-    <h3>How to Install The Loop Repo</h3>
-<ol>
-  <li>Go to <b>Settings</b> → <b>System</b> → enable <b>Unknown sources</b>.</li>
-  <li>Click back one time and open <b>File Manager</b>.</li>
-  <li>Scroll down to <b>Add source</b>.</li>
-  <li>Type in URL: <code>https://loopaddon.uk/theloop/</code></li>
-  <li>Click <b>OK</b> → name it <b>The Loop</b> → click <b>OK</b> again.</li>
-  <li>You will see it saved on the right.</li>
-  <li>Click back → go to <b>Add-ons</b>.</li>
-  <li>Select <b>Install from zip file</b>.</li>
-  <li>Choose <b>The Loop</b> → select the repo file → wait for install message.</li>
-  <li>Click <b>Install from repository</b> → open <b>The Loop Repo</b>.</li>
-  <li>Go to <b>Video add-ons</b> → install <b>The Loop Add-on</b> for live sports streams.</li>
-</ol>
-
-    <h3>How to Install Narcacist Wizard Repo</h3>
-<ol>
-  <li>Go to <b>Settings</b> → <b>System</b> → enable <b>Unknown sources</b>.</li>
-  <li>Click back one time and open <b>File Manager</b>.</li>
-  <li>Scroll down to <b>Add source</b>.</li>
-  <li>Type in URL: <code>http://www.narcacist.com/repo</code></li>
-  <li>Click <b>OK</b> → name it <b>Narcacist</b> → click <b>OK</b> again.</li>
-  <li>You will see it saved on the right.</li>
-  <li>Click back → go to <b>Add-ons</b>.</li>
-  <li>Select <b>Install from zip file</b>.</li>
-  <li>Choose <b>Narcacist</b> → select the repo file → wait for install message.</li>
-  <li>Click <b>Install from repository</b> → open <b>Narcacist Wizard Repo</b>.</li>
-  <li>Go to <b>Video add-ons</b> → pick any add-on you want → click <b>Install</b>.</li>
-</ol>
- 
-<section class="kodi-instructions">
-  <h2>How to Set Up IPTV Simple Client in Kodi with M3U Playlist to watch Live TV channels in Kodi
-  </h2>
-
-  <ol>
-    <li>Open <strong>Kodi</strong> and go to <strong>Settings</strong> (gear icon).</li>
-    <li>Select <strong>Add-ons</strong>.</li>
-    <li>Click <strong>Install from repository</strong>.</li>
-    <li>Open <strong>PVR Clients</strong>.</li>
-    <li>Select <strong>IPTV Simple Client</strong>.</li>
-    <li>Click <strong>Install</strong>.</li>
-    <li>After installation, click <strong>Configure</strong>.</li>
-    <li>
-      Under <strong>General</strong>:
-      <ul>
-        <li>Set <strong>Location</strong> to <code>Remote path (Internet address)</code></li>
-        <li>Enter your <strong>(US Main includes 1400 channels) Enter this where it says M3U playlist:
-        https://iptv-org.github.io/iptv/countries/us.m3u
-        FOR SPANISH CHANNELS :   https;//iptv-org.github.io/iptv/languages/spa.m3u  (1734 channels)
-        for the MAIN playlist of channels use URL:  https://iptv-org.github.io/iptv/index.m3u </strong></li>
+    <section>
+      <h2>Setup Instructions (Cleaned Up)</h2>
+      <ul class="instructions">
+        <li>[STEP 1: TYPE YOUR FIRST INSTRUCTION HERE]</li>
+        <li>[STEP 2: TYPE YOUR SECOND INSTRUCTION HERE]</li>
+        <li>[STEP 3: TYPE YOUR THIRD INSTRUCTION HERE]</li>
+        <li>Optional reference: <a href="https://www.stremio.com" target="_blank" class="text-link">stremio.com</a></li>
       </ul>
-    </li>
-
-    <div class="kodi-note-box">
-  <strong>Note:</strong>
-  After entering your playlist URL and clicking <strong>OK</strong>, it may appear as if nothing happens. 
-  This is normal.
-  <br><br>
-  To finish loading channels:
-  <ol>
-    <li>Exit Kodi completely.</li>
-    <li>Go to <strong>Settings</strong> → <strong>Apps</strong> → <strong>Kodi</strong>.</li>
-    <li>Select <strong>Force Stop</strong>, then reopen Kodi.</li>
-    <li>From the Kodi home screen, scroll down to <strong>TV</strong>.</li>
-    <li>In the upper-right corner, select <strong>Channels</strong> to begin loading channels.</li>
-  </ol>
-</div>
-
-
-    <div class="kodi-disclaimer">
-  <p>
-    This guide is provided for <strong>educational purposes only</strong>.
-    No content, streams, or playlists are hosted or provided.
-    Users are responsible for ensuring any services or playlists used comply
-    with local laws and provider terms. This site is not affiliated with Kodi
-    or any third-party streaming services.
-  </p>
-</div>
-
-  <section id="stremio">
-    <h2>Stremio</h2>
-    <p>Stremio is a free media center app that lets you stream movies, TV shows, and live channels through official and community add-ons.</p>
-
-    <ol>
-      <li>Download and install Stremio from <a href="https://www.stremio.com" target="_blank">stremio.com</a></li>
-      <li>Create a free account or log in.You must create account on another device by going to the website
-      and at top right go to sign in and then you will see "sign up with email"</li>
-      <li>after signing up>navigate to left menu and click on puzzle piece for add on's and make sure 
-        community tab is selected at the top.  Scroll thru and pick your add on's.  I recommend USA TV for live
-        tv.  If you want to watch anything else or you are outside the US, or if you have an internet provider that 
-        blocks your streams.  I then recommend a VPN, or for privacy use a VPN.  I can't recommended one because
-        I don't use one  but they are available in my Unlinked library and soon on here..</li>
-      
-      <li>USA TV is great add-on for USA and UK based tv channels. You can find it inside "Community Add-on's by 
-      going to "search" up top right and type usa and it pops up. Select it to install</li>
-    </ol>
-  </section>
-
-  <!-- Other sections below -->
+    </section>
+  </main>
 </body>
 </html>
-
-
-
-    
