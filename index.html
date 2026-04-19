@@ -1,198 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[YOUR PAGE TITLE]</title>
-  <style>
-    :root {
-      --bg: #0f1115;
-      --panel: #1a1f29;
-      --panel-2: #222938;
-      --text: #f5f7ff;
-      --muted: #c7d0e0;
-      --accent: #2d8cff;
-      --accent-hover: #176fd6;
-      --max: 1100px;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.5;
-    }
-
-    header {
-      background: linear-gradient(180deg, #151b25 0%, #10151e 100%);
-      border-bottom: 1px solid #293246;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: clamp(1.8rem, 2.6vw, 2.8rem);
-    }
-
-    header p {
-      margin: 0.75rem auto 0;
-      max-width: 800px;
-      color: var(--muted);
-    }
-
-    main {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 1rem;
-    }
-
-    section {
-      background: var(--panel);
-      border: 1px solid #2a3344;
-      border-radius: 14px;
-      padding: 1rem;
-      margin: 1rem 0;
-    }
-
-    .template-note {
-      background: #151b25;
-      border-left: 4px solid #ffcc4d;
-      color: #ffe9a8;
-    }
-
-    .app-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 12px;
-    }
-
-    .app-card {
-      background: var(--panel-2);
-      border: 1px solid #32405a;
-      border-radius: 12px;
-      padding: 0.9rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-    }
-
-    .app-card h3 {
-      margin: 0;
-      font-size: 1rem;
-      color: #dce7ff;
-    }
-
-    .app-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    .download-button {
-      display: inline-block;
-      width: 100%;
-      background-color: var(--accent);
-      color: #ffffff;
-      padding: 10px 14px;
-      border-radius: 8px;
-      text-decoration: none;
-      text-align: center;
-      font-weight: 700;
-      transition: background-color 0.2s ease;
-      margin-top: auto;
-    }
-
-    .download-button:hover {
-      background-color: var(--accent-hover);
-    }
-
-    .instructions li { margin: 0.4rem 0; }
-    .text-link { color: #9fc5ff; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Page Title]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header, footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #f8f9fa;
+            padding: 0.5em 0;
+            text-align: center;
+        }
+        section {
+            padding: 2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 0.5em 1em;
+            margin: 1em 0;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 1em;
+            }
+            section {
+                padding: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>[YOUR SITE NAME]</h1>
-    <p>[SHORT BIO / WHAT THIS PAGE IS FOR]</p>
-  </header>
-
-  <main>
-    <section class="template-note">
-      <h2>Template Edit Guide</h2>
-      <p>
-        Replace anything inside brackets like <strong>[THIS]</strong> with your own words.
-        After you type your words, <strong>delete the brackets</strong>.
-      </p>
-      <p>
-        Example: change <strong>[YOUR SITE NAME]</strong> to <strong>Katie's App Hub</strong>.
-      </p>
+    <header>
+        <h1>[Page Title]</h1>
+    </header>
+    <nav>
+        <!-- Navigation links or menu can be placed here -->
+    </nav>
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>[Short Intro/Bio]</p>
     </section>
-
-    <section>
-      <h2>[ABOUT ME / ABOUT THIS PAGE]</h2>
-      <p>[TYPE YOUR INTRODUCTION HERE]</p>
+    <section id="main-content">
+        <h2>Main Content</h2>
+        <p><!-- Main content goes here --></p>
+        <h3>Downloads</h3>
+        <a href="#" class="download-button">Download Example 1</a>
+        <a href="#" class="download-button">Download Example 2</a>
+        <a href="#" class="download-button">Download Example 3</a>
     </section>
-
-    <section>
-      <h2>Downloads</h2>
-      <div class="app-grid">
-        <article class="app-card"><h3>Streamfire</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1.2.3/streamfire1.2.3.1.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Sportsfire</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v2.0.7/sportsfire2.0.7.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>SmartTube</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.3.2/smarttube_stable.2.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Film+</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.0.1/FilmPlus_v2.4.1_AdFree.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>XCIPTV Player</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v24/XCIPTV.Player.v7.0.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Tea TV</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.28/TeaTV-v11.1.0r.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>HDO Box</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v2.1.4/HDO_Box_v2.1.4_Android_TV_hdoboxplus.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Tivimate</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.29/tivimate.5.2.0.1.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Smart IPTV Player</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.29/Smart.IPTV.v1.8.8.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Kodi Omega 21 (32ARM)</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/21.3/32bitARMKODIOMEGA20.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Kodi Omega 21 (64 ARM)</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/21.3/kodi-21.2-Omega-arm64-v8a.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Bee TV</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1%2C2%2C1/beetvseptup.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Flix Vision</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1.2.3/FLIX.VISION.NEW_v3.2.0_2r.r.62._mod.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>OnStream</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1.1.0/OnStream-v1.1.0.Andriod-TV.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>STRMR</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.3.2/STRMR-latest.1.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>APK Time</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.3.2/APKTime-v2.2-Original.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Stremio</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v22.2/Stremio_1.6.7_.Android_TV.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Cinema HD</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.41/cinemahd-v3.4.1.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Launch Manager for Firestick</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/0.1.9/launchermrgforfirestick.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>SportzX</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v24/SportzX_2.1v.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>IPTV Smarters (copy 1)</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.31/IPTV_Smarters_Classic_v2.2.2.5.Premium.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>All in One</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v4.4/ALL-IN-1-v3.2.2.FireSticks-Black-Ad-Free.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Porn Total</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v4.1/porntotal.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>HD Streamz</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/V3.34/HD_STREAMZ_Latest_3.9.6-a-174_18-Jun-25_436ffe7f_enc.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Unlinked</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/0.1.9/unlinked.apk.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Tubi</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1%2C2%2C2/Tubi-v9.8.1000.Ad-Free.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Incognito Play</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v1%2C2%2C1/Incognito_Play_v1.1.2.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Cloudstream</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.44/Cloudstream.v4.5.2.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>TizenTube</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.3.2/cobalt-armTIZEN.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Viva TV</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v7/Viva.TV.v1.7.4.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Ocean Streamz</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.0.1/OCEAN_STREAMZ_v3.5.1.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>App Cloner</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/3.5.0/app-cloner.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>IPTV Smarters (copy 2)</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.31/IPTV_Smarters_Classic_v2.2.2.5.Premium.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>1Pix Media</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v3.44/1Pix.Media.4.0.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Wuffy Media Player</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v7/Wuffy.Media.Player.v4.1.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>CRICFy</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.26/CRICFy_v5.5_cricfy.net.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Drama Player</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v2.1.4/Drama_Player_v1.0.11_Android_TV_hdoboxplus.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>RBTV77</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.26/rbtv77-app-v3.0.309.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Playfy TV</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.26/Playfy.tv.1.3.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>TPlayer</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.27/tplayer-7-8b.apk" class="download-button">Download</a></article>
-        <article class="app-card"><h3>Pato Player Pro</h3><p>[ADD NOTES HERE]</p><a href="https://github.com/KatieConnects/unlinkedstore/releases/download/v.26/PatoPlayerPro_v24.apk" class="download-button">Download</a></article>
-      </div>
-    </section>
-
-    <section>
-      <h2>Setup Instructions (Cleaned Up)</h2>
-      <ul class="instructions">
-        <li>[STEP 1: TYPE YOUR FIRST INSTRUCTION HERE]</li>
-        <li>[STEP 2: TYPE YOUR SECOND INSTRUCTION HERE]</li>
-        <li>[STEP 3: TYPE YOUR THIRD INSTRUCTION HERE]</li>
-        <li>Optional reference: <a href="https://www.stremio.com" target="_blank" class="text-link">stremio.com</a></li>
-      </ul>
-    </section>
-  </main>
+    <footer>
+        <p>© [Year] [Your Name]. All rights reserved.</p>
+    </footer>
 </body>
 </html>
